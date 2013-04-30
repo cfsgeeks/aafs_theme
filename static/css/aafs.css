@@ -1,0 +1,66 @@
+#logo {
+    margin: 20px 0 auto;
+}
+
+#myCarousel {
+    border: 0;
+    box-shadow: 0px 4px 2px -2px #e2e2e2;
+}
+
+.carousel-control {
+    background: none;
+    border: 0;
+    font-family: lato;
+    font-size: 100px;
+    font-weight: 100;
+    top: 50%;
+}
+
+.meta {
+    font-size: 0.8em;
+}
+
+.textnav {
+    list-style: none;
+    margin-left: 0;
+}
+
+.vig h4 {
+    color: #4e7fbf;
+    font-family: 'Lato';
+    font-weight: 300;
+    padding: 12px 0;
+    text-shadow: 0px 0px 1px #ccc;
+}
+
+div.infobox.infobox--hotline {
+    color: #bf382c;
+    font-family: 'Titillium Web';
+    text-align: center;
+}
+
+html,* {
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizelegibility;
+}
+
+nav ul {
+    display: table;
+    margin: 70px 0px 10px;
+    width: 100%;
+}
+
+nav ul li {
+    display: table-cell;
+    font-family: 'Lato';
+    font-size: 1.5em;
+    height: 60px;
+    text-align: center;
+    text-shadow: 0px 0px 1px #444;
+    vertical-align: middle;
+    width: 20%;
+}
