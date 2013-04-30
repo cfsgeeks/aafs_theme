@@ -4,6 +4,10 @@
 
 #myCarousel {
     border: 0;
+    -webkit-box-shadow: 0px 4px 2px -2px #e2e2e2;
+    -moz-box-shadow: 0px 4px 2px -2px #e2e2e2;
+    -o-box-shadow:0px 4px 2px -2px #e2e2e2;
+    -ms-box-shadow:0px 4px 2px -2px #e2e2e2;
     box-shadow: 0px 4px 2px -2px #e2e2e2;
 }
 
@@ -30,6 +34,10 @@
     font-family: 'Lato';
     font-weight: 300;
     padding: 12px 0;
+    -webkit-text-shadow: 0px 0px 1px #ccc;
+    -moz-text-shadow: 0px 0px 1px #ccc;
+    -o-text-shadow: 0px 0px 1px #ccc;
+    -ms-text-shadow: 0px 0px 1px #ccc;
     text-shadow: 0px 0px 1px #ccc;
 }
 
@@ -60,7 +68,12 @@ nav ul li {
     font-size: 1.5em;
     height: 60px;
     text-align: center;
+    -webkit-text-shadow:0px 0px 1px #444;
+    -moz-text-shadow:0px 0px 1px #444;
+    -o-text-shadow:0px 0px 1px #444;
+    -ms-text-shadow:0px 0px 1px #444;
     text-shadow: 0px 0px 1px #444;
     vertical-align: middle;
     width: 20%;
 }
+
