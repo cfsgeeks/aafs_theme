@@ -15,10 +15,13 @@
 </head>
 <body id="{% block body_id %}body{% endblock %}">
 	{% include 'includes/header.html' %}
+	{% if request.path == "/" %}
+	{% include "includes/slideshow.html" %}
+	{% endif %}
 	<div class="container">
 		<div class="row">
 		{% if request.path == "/" or request.path == "/contact-us/" %}
-			<div class="span12">
+		<div class="span12">
 		{% else %}
 			<div class="span4 left">
     		{% block left_panel %}
