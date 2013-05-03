@@ -99,3 +99,11 @@ a {
 .nav-list>.active>a, .nav-list>.active>a:hover, .nav-list>.active>a:focus {
     background:#a63126;
 }
+
+footer {
+    margin-top:40px;
+}
+
+body {
+    font-family:'Open Sans';
+}
