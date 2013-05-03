@@ -95,3 +95,7 @@ a {
     font-weight:300;
     letter-spacing:1px;
 }
+
+.nav-list>.active>a {
+    background:#a63126;
+}
