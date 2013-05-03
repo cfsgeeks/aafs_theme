@@ -64,7 +64,7 @@ nav ul {
 
 nav ul li {
     display: table-cell;
-    font-family: 'Lato';
+    font-family: 'Open Sans Condensed';
     font-size: 1.5em;
     height: 60px;
     text-align: center;
@@ -84,4 +84,8 @@ nav ul li {
 #nav_main li a:hover {
     text-decoration:none;
     color:#f2f2f2;
+}
+
+a {
+    color:#bf382c;
 }
