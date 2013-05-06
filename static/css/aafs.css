@@ -111,3 +111,7 @@ body {
 .shim-top {
     margin-top:25px;
 }
+
+.text-small {
+    font-size:0.89em;
+}
