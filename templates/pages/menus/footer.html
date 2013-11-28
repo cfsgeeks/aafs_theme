@@ -6,7 +6,7 @@
     <h6>{{page.title}}</h6>
     {% page_menu page %}
     {% for page in page_branch %}
-    <li><a href="{{page.get_absolute_url()}}">{{page.title}}</a></li>
+    <li><a href="{{page.get_absolute_url}}">{{page.title}}</a></li>
     {% endfor %}
 </div>
 {% endif %}
