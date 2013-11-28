@@ -1,9 +1,19 @@
 {% load i18n pages_tags %}
 {% spaceless %}
 {% for page in page_branch %}
-{% if page.is_primary and not page.in_menu%}
+{% if page.is_primary and not page.in_menu %}
 <div class="span3">
     <h6>{{page.title}}</h6>
+    <ul>
+    {% if page.is_current_or_ascendant or not page.is_primary %}
+<li>
+    {% if not page.is_primary %}
+    <a href="{{ page.get_absolute_url }}">{{ page.title }}</a>
+    {% endif %}
+    {% page_menu page %}
+</li>
+{% endif %}
+</ul>
 </div>
 {% endif %}
 {% endfor %}
