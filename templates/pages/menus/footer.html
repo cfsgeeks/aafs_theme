@@ -5,7 +5,9 @@
 <div class="span3">
     <h6>{{page.title}}</h6>
     {% page_menu page %}
-    {% page.branch_level %}
+    {% for page in page_branch %}
+    <li><a href="{{page.get_absolute_url()}}">{{page.title}}</a></li>
+    {% endfor %}
 </div>
 {% endif %}
 {% endfor %}
