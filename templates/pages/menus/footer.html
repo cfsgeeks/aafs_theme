@@ -1,12 +1,10 @@
 {% load i18n pages_tags %}
 {% spaceless %}
 {% for page in page_branch %}
-{% if page.in_menu %}
-{% if page.is_primary %}
+{% if page.is_primary not page.in_menu%}
 <div class="span3">
     <h6>{{page.title}}</h6>
 </div>
-{% endif %}
 {% endif %}
 {% endfor %}
 {% endspaceless %}
