@@ -5,9 +5,11 @@
 <div class="span3">
     <h6>{{page.title}}</h6>
     {% page_menu page %}
+    <ul class="unstyled">
     {% for page in page_branch %}
     <li><a href="{{page.get_absolute_url}}">{{page.title}}</a></li>
     {% endfor %}
+    </ul>
 </div>
 {% endif %}
 {% endfor %}
