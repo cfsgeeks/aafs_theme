@@ -6,7 +6,7 @@
     <h6>{{page.title}}</h6>
 {% endif %}
     <ul>
-    {% if branch_level > 0 %}
+    {% if page.branch_level > 0 %}
     <li>
     {% if not page.is_primary %}
     <a href="{{ page.get_absolute_url }}">{{ page.title }}</a>
