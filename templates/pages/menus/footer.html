@@ -5,9 +5,11 @@
 <div class="span3">
     <h6>{{page.title}}</h6>
     <ul>
+{% endif %}
     {% if page.has_children_in_menu %}
     <li><a href="{{ page.get_absolute_url }}">{{ page.title }}</a></li>
     {% endif %}
+    {% if page.is_primary and not page.in_menu %}
     </ul>
 </div>
 {% endif %}
