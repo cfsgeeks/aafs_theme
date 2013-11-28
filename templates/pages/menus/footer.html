@@ -1,12 +1,12 @@
 {% load i18n pages_tags %}
 {% spaceless %}
-<div class="span3">
-<ul>
 {% for page in page_branch %}
-<li>
-    <a href="{{ page.get_absolute_url }}">{{ page.title }}</a>
-</li>
-{% endfor %}
-</ul>
+{% if page.in_menu %}
+{% if page.is_primary %}
+<div class="span3">
+    <h6>{{page.title}}</h6>
 </div>
+{% endif %}
+{% endif %}
+{% endfor %}
 {% endspaceless %}
