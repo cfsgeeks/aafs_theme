@@ -4,18 +4,8 @@
 {% if page.is_primary and not page.in_menu %}
 <div class="span3">
     <h6>{{page.title}}</h6>
-{% endif %}
-    <ul>
-    {% if page.branch_level > 0 %}
-    <li>
-    {% if not page.is_primary %}
-    <a href="{{ page.get_absolute_url }}">{{ page.title }}</a>
-    {% endif %}
     {% page_menu page %}
-</li>
-    {% endif %}
-</ul>
-{% if page.is_primary and not page.in_menu %}
+    {% page.branch %}
 </div>
 {% endif %}
 {% endfor %}
